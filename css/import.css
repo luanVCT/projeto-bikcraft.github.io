@@ -1,2 +1,4 @@
-@import '../css/utilitarios.css';
+@import '../css/utilitarios/tipografia.css';
+@import '../css/utilitarios/cores.css';
+@import '../css/utilitarios/estilos.css';
 @import '../css/home/introducao.css';
