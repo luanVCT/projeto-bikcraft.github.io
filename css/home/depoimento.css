@@ -72,7 +72,7 @@
   .depoimento-texto p::before {
     content: "❝";
     position: absolute;
-    left: -18px;
+    left: -22px;
     top: -15px;
     display: inline;
     font-size: 40px;

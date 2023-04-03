@@ -93,10 +93,16 @@
     margin-bottom: 20px;
   }
 
+  .nav-lista li a::after {
+    display: none;
+  }
+
   .nav-lista li {
     background-color: #111111;
     padding: 8px 14px;
     border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 12px;
   }
 
   .main-introducao {
@@ -113,6 +119,7 @@
   .introducao-descricao h1 {
     max-width: initial;
     margin-bottom: 6px;
+    padding-top: 32px;
   }
 
   #nimbus-grande {
