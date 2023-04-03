@@ -83,16 +83,8 @@
 }
 
 @media (max-width: 1200px) {
-  .introducao-descricao h1 {
-    font-size: 3rem;
-  }
-
   .introducao-descricao {
     padding-bottom: 160px;
-  }
-
-  .introducao-descricao p {
-    font-size: 1.2rem;
   }
 }
 
@@ -107,10 +99,6 @@
     border-radius: 4px;
   }
 
-  .introducao-descricao p {
-    font-size: 1.3rem;
-  }
-
   .main-introducao {
     background-color: #111111;
     grid-template-columns: 1fr;
@@ -123,19 +111,17 @@
   }
 
   .introducao-descricao h1 {
-    font-size: 2rem;
     max-width: initial;
-    line-height: 1.2;
     margin-bottom: 6px;
   }
 
-  /* #nimbus-grande {
+  #nimbus-grande {
     display: none;
   }
 
   #nimbus-pequena {
     display: block;
-  } */
+  }
 
   .main-introducao {
     box-shadow: inset 0 -40px #ffffff;
@@ -152,10 +138,6 @@
 
   .nav-lista li {
     padding: 4px 8px;
-  }
-
-  .nav-lista li a {
-    font-size: 0.8rem;
   }
 
   .introducao-descricao p {
