@@ -52,6 +52,55 @@ img {
   gap: 40px;
 }
 
+.pt8px {
+  padding-top: 8px;
+}
+
+.pt10px {
+  padding-top: 10px;
+}
+
+.pt20px {
+  padding-top: 20px;
+}
+
+.pt40px {
+  padding-top: 40px;
+}
+
+.pt60px {
+  padding-top: 60px;
+}
+
+.pb120px {
+  padding-bottom: 120px;
+}
+
+.pb8px {
+  padding-bottom: 8px;
+}
+
+.pb10px {
+  padding-bottom: 10px;
+}
+
+.pb20px {
+  padding-bottom: 20px;
+}
+
+.pb40px {
+  padding-bottom: 40px;
+}
+
+.pb60px {
+  padding-bottom: 60px;
+}
+
+.pb120px {
+  padding-bottom: 120px;
+}
+
+
 @media (max-width: 800px) {
   .btn {
     font-size: 1rem;
