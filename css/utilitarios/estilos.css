@@ -10,7 +10,10 @@ p,
 ul,
 li,
 label,
-button {
+dl,
+dt,
+dd, button {
+  margin-inline-start: 0px;
   margin: 0px;
   padding: 0px;
   text-decoration: none;
@@ -42,6 +45,10 @@ img {
   box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
 }
 
+a.btn:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -52,8 +59,18 @@ img {
   gap: 40px;
 }
 
+.titulo-bg {
+  background-color: var(--cor-11);
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
 .pt8px {
   padding-top: 8px;
+}
+
+.pt16px {
+  padding-top: 16px;
 }
 
 .pt10px {
@@ -64,6 +81,10 @@ img {
   padding-top: 20px;
 }
 
+.pt32px {
+  padding-top: 32px;
+}
+
 .pt40px {
   padding-top: 40px;
 }
@@ -72,12 +93,16 @@ img {
   padding-top: 60px;
 }
 
-.pb120px {
-  padding-bottom: 120px;
+.pt120px {
+  padding-top: 120px;
 }
 
 .pb8px {
   padding-bottom: 8px;
+}
+
+.pb16px {
+  padding-bottom: 16px;
 }
 
 .pb10px {
@@ -86,6 +111,10 @@ img {
 
 .pb20px {
   padding-bottom: 20px;
+}
+
+.pb32px {
+  padding-bottom: 32px;
 }
 
 .pb40px {
@@ -100,11 +129,21 @@ img {
   padding-bottom: 120px;
 }
 
-
 @media (max-width: 800px) {
   .btn {
     font-size: 1rem;
     padding: 0.79rem 1.2rem;
+  }
+
+  .titulo-bg {
+    background-color: var(--cor-11);
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .titulo-bg {
+    padding-bottom: 30px;
+    padding-top: 30px;
   }
 }
 

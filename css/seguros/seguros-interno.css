@@ -1,0 +1,110 @@
+#seguros-html .seguros-bg {
+  padding-top: 0px;
+  padding-bottom: 120px;
+}
+
+.seguros-introducao {
+  grid-template-columns: 1fr;
+  gap: 0px;
+}
+
+.seguros-vantagens-bg {
+  background-color: var(--cor-12);
+}
+
+.seguros-container {
+  grid-template-columns: 1fr;
+}
+
+.seguros-vantagens-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+  gap: 40px 80px;
+}
+
+.faq {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.faq-container {
+  grid-template-columns: 1fr;
+}
+
+.faq-conteudo {
+  grid-template-columns: 1fr;
+  gap: 0px;
+  padding-right: 20px;
+}
+
+.faq-conteudo-item {
+  padding: 20px 20px 20px 40px;
+}
+
+.faq-conteudo-item:nth-child(odd) {
+  background-color: var(--cor-1);
+}
+
+.faq-pergunta {
+  display: grid;
+  cursor: pointer;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.faq-pergunta::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 12px;
+  top: 9px;
+  left: -20px;
+  height: 8px;
+  background-color: var(--cor-p1);
+}
+
+.faq-pergunta:hover img {
+  transform: rotate(180deg);
+  transition: 0.3s;
+}
+
+.faq-pergunta img,
+.faq-pergunta p {
+  grid-area: 1;
+}
+
+@media (max-width: 800px) {
+  #seguros-html .seguros-bg {
+    padding-top: 0px;
+    padding-bottom: 60px;
+  }
+
+  .seguros-vantagens-lista {
+    padding-top: 20px;
+  }
+
+  .seguros-vantagens-bg {
+    padding-bottom: 60px;
+    padding-top: 30px;
+  }
+  .faq {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (max-width: 800px) {
+  .seguros-vantagens-lista {
+    padding-top: 0px;
+  }
+
+  .faq {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .faq-container {
+    padding-bottom: 40px;
+  }
+}

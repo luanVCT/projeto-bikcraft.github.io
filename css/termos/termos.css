@@ -3,12 +3,6 @@
   padding-bottom: 32px;
 }
 
-.termos-bg {
-  background-color: var(--cor-11);
-  padding-bottom: 60px;
-  padding-top: 60px;
-}
-
 .termos {
   grid-template-columns: initial;
   gap: 0px;
@@ -17,8 +11,8 @@
 .termos-conteudo {
   grid-template-columns: initial;
   gap: 0px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .termos-descricao {
@@ -37,6 +31,10 @@
     background-color: var(--cor-11);
     padding-bottom: 30px;
     padding-top: 30px;
+  }
+
+  .termos span {
+    font-size: 1rem;
   }
 
   .termos-conteudo {
