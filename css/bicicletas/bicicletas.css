@@ -1,3 +1,8 @@
+#bicicletas-html .introducao-container {
+  background-color: black;
+  padding-bottom: 32px;
+}
+
 .bicicletas {
   grid-template-columns: initial;
   gap: 0px;
