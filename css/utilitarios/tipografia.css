@@ -26,8 +26,13 @@
   font: 600 1.125rem/1.5 "Poppins", sans-serif;
 }
 
+.f-1-m-sb {
+  font: 500 1.125rem/1.5 "Poppins", sans-serif;
+}
+
 .f-1-xs {
   font: 600 0.75rem/1 "Poppins", sans-serif;
+  text-transform: uppercase;
 }
 
 .f-2-l {
@@ -45,6 +50,10 @@
 
 .f-2-s {
   font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.f-2-s-sb {
+  font: 500 1rem/1.5 "Roboto", sans-serif;
 }
 
 .f-2-xs {

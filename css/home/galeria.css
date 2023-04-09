@@ -2,7 +2,7 @@
   max-width: 1400px;
   margin-top: 50px;
   grid-template-columns: 1fr;
-  margin-bottom: 120px;
+  padding-bottom: 120px;
 }
 
 .galeria-subtitulo {

@@ -3,6 +3,11 @@
   padding-bottom: 120px;
 }
 
+#seguros-html .introducao-container {
+  background-color: black;
+}
+
+
 .seguros-introducao {
   grid-template-columns: 1fr;
   gap: 0px;
@@ -51,6 +56,10 @@
   align-items: center;
   justify-content: space-between;
   position: relative;
+}
+
+.faq-conteudo-item dd {
+  max-width: 80ch;
 }
 
 .faq-pergunta::before {

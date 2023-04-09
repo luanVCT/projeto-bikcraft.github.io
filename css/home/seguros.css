@@ -1,8 +1,3 @@
-#seguros-html .introducao-container {
-  background-color: black;
-  padding-bottom: 32px;
-}
-
 .seguros-bg {
   background-color: var(--cor-11);
   padding: 60px 20px 100px 0px;
@@ -90,7 +85,7 @@
 
 @media (max-width: 800px) {
   .seguros-bg {
-    padding: 40px 20px 120px 0px;
+    padding: 40px 0px 120px 0px;
   }
   .seguros h2 {
     padding-bottom: 40px;
