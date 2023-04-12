@@ -66,6 +66,15 @@
   border-radius: 4px;
 }
 
+.formulario-mensagem textarea:focus,
+.formulario-email input:focus,
+.formulario-nome-fone input:focus {
+  outline: none;
+  border: 1px solid var(--cor-p1);
+  background-color: var(--cor-0);
+  box-shadow: 0 0 0 3px #fea;
+}
+
 .formulario-nome-fone {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -80,13 +89,6 @@
 .formulario-email input {
   width: 100%;
   box-sizing: border-box;
-}
-
-.formulario-mensagem textarea:focus, .formulario-email input:focus, .formulario-nome-fone input:focus {
-  outline: none;
-  border: 1px solid var(--cor-p1);
-  background-color: var(--cor-0);
-  box-shadow: 0 0 0 3px #fea;
 }
 
 .formulario-mensagem textarea {
@@ -171,8 +173,6 @@
   object-fit: cover;
 }
 
-
-
 @media (max-width: 800px) {
   .lojas-locais-bg {
     background-color: #e5e5e5;
@@ -211,6 +211,7 @@
   .contato-meios-email {
     margin-bottom: 16px;
   }
+
   .contato-meios-fone {
     margin-bottom: 26px;
   }
@@ -252,4 +253,11 @@
   .loja-informacao {
     padding: 20px 30px;
   }
+
+  .contato-meios-email,
+  .contato-meios-endereco,
+  .contato-meios-fone {
+    grid-template-columns: 1fr;
+  }
+
 }

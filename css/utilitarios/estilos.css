@@ -13,7 +13,8 @@ label,
 dl,
 dt,
 dd,
-button {
+button,
+input {
   margin-inline-start: 0px;
   margin: 0px;
   padding: 0px;
@@ -46,6 +47,7 @@ img {
   max-width: max-content;
   background: linear-gradient(#ffbf00 0%, #f2a50c 100%);
   color: var(--cor-p5);
+  text-align: start;
   border-radius: 4px;
   font-family: "Poppins", Arial, sans-serif;
   font-weight: 600;
@@ -60,12 +62,12 @@ img {
 }
 
 .btn.seta::after {
-  content: '';
-  display: inline-block; 
+  content: "";
+  display: inline-block;
   width: 18px;
   height: 10px;
   margin-left: 1rem;
-  background-image: url('../../img/icones/seta.svg');
+  background-image: url("../../img/icones/seta.svg");
   background-repeat: no-repeat;
 }
 
@@ -82,9 +84,50 @@ button {
   cursor: pointer;
 }
 
+.input-style[type="text"],
+.input-style[type="email"],
+.input-style[type="number"] {
+  margin-top: 5px;
+  padding: 12px;
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+}
 
+textarea:focus,
+.input-style[type="text"]:focus,
+.input-style[type="email"]:focus,
+.input-style[type="number"]:focus {
+  outline: none;
+  border: 1px solid var(--cor-p1);
+  background-color: var(--cor-0);
+  box-shadow: 0 0 0 3px #fea;
+}
 
+.select-style {
+  margin-top: 5px;
+  padding: 12px;
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 24px;
+}
 
+select.select-style:focus {
+  outline: none;
+  border: 1px solid var(--cor-p1);
+  background-color: var(--cor-0);
+  box-shadow: 0 0 0 3px #fea;
+}
 
 .container {
   display: grid;

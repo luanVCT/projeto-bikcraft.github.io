@@ -30,6 +30,11 @@
   font: 500 1.125rem/1.5 "Poppins", sans-serif;
 }
 
+.f-1-s {
+  font: 500 1rem/1 "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+
 .f-1-xs {
   font: 600 0.75rem/1 "Poppins", sans-serif;
   text-transform: uppercase;
