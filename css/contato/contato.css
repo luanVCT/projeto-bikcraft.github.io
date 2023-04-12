@@ -35,6 +35,11 @@
   align-items: start;
 }
 
+.contato-meios-email a:hover,
+.contato-meios-fone a:hover {
+  color: var(--cor-2);
+}
+
 .contato-meios-fone {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -259,5 +264,4 @@
   .contato-meios-fone {
     grid-template-columns: 1fr;
   }
-
 }
