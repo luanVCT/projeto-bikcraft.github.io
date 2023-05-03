@@ -1,0 +1,231 @@
+#nimbus-html .introducao-container {
+  background-color: var(--cor-12);
+}
+
+.nimbus-stark {
+  background-color: var(--cor-11);
+  padding-bottom: 60px;
+}
+
+.nimbus-foto-extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.nimbus-descricao-compra {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.estoque-e-entrega p + p {
+  margin-top: 8px;
+}
+
+.nimbus-previsao-entrega {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+}
+
+.nimbus-previsao-entrega::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/icones/entrega.svg");
+}
+
+.nimbus-estoque {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 8px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+}
+
+.nimbus-estoque::before {
+  content: "";
+  display: block;
+  margin-right: 4px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image: url("../../img/icones/estoque.svg");
+}
+
+.nimbus-descricao-subtitulo {
+  margin-top: 40px;
+  margin-bottom: 12px;
+}
+
+.nimbus-descricao-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 32px;
+  gap: 32px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+}
+
+.nimbus-descricao-informacoes-item h3 {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+
+.ficha-lista {
+  padding: 32px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+}
+
+.ficha-lista-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--cor-11);
+  padding-bottom: 5px;
+}
+
+.ficha-lista-item:last-child {
+  border-bottom: none;
+}
+
+.ficha-lista-item + .ficha-lista-item {
+  padding-top: 6px;
+}
+
+.nimbus-seguro-bg {
+  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-12);
+  background-color: var(--cor-11);
+}
+
+.nimbus-seguro-informacoes {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.nimbus-seguro-informacoes p {
+  max-width: 40ch;
+  margin-top: 32px;
+  margin-bottom: 20px;
+}
+
+.nimbus-seguro-container {
+  max-width: 1400px;
+}
+
+.nimbus-seguro-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+@media (max-width: 800px) {
+  .nimbus-fotos {
+    order: 1;
+  }
+
+  #nimbus-html .titulo-bg {
+    padding-bottom: 10px;
+  }
+
+  .nimbus-container {
+    grid-template-columns: 1fr;
+  }
+
+  .nimbus-descricao-compra {
+    margin-top: 16px;
+    display: grid;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .nimbus-descricao-compra a {
+    margin-bottom: 12px;
+  }
+
+  .estoque-e-entrega {
+    display: grid;
+  }
+
+  .nimbus-previsao-entrega {
+    max-width: max-content;
+    display: inline-flex;
+  }
+
+  .nimbus-estoque {
+    display: inline-flex;
+    max-width: max-content;
+  }
+
+  #nimbus-html .galeria-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow-x: initial;
+    padding-bottom: 0px;
+  }
+
+  #nimbus-html .galeria-lista-item {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  #nimbus-html .galeria-container {
+    padding-bottom: 60px;
+  }
+
+  .nimbus-seguro-bg {
+    box-shadow: inset 0 60px var(--cor-0), inset 0 -60px var(--cor-12);
+  }
+}
+
+@media (max-width: 600px) {
+  .nimbus-seguro-bg {
+    box-shadow: inset 0 0px var(--cor-0), inset 0 -0px var(--cor-12);
+    background-color: var(--cor-11);
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .nimbus-seguro-container {
+    grid-template-columns: 1fr;
+    
+  }
+
+  .nimbus-seguro-informacoes {
+    grid-row: 1;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .nimbus-seguro-informacoes p {
+    max-width: 40ch;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .nimbus-descricao-informacoes {
+    grid-template-columns: 1fr;
+    background-color: var(--cor-11);
+    padding: 0px;
+  }
+
+  .nimbus-descricao-informacoes-item {
+    background-color: var(--cor-12);
+    padding: 20px;
+    border-radius: 4px;
+  }
+  
+}

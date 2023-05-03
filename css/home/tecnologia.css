@@ -1,0 +1,112 @@
+.tecnologia-bg {
+  background-color: var(--cor-11);
+
+  box-shadow: inset 0px -80px #ffffff, inset 0px 80px #ffffff;
+}
+
+.tecnologia-informacao {
+  padding-top: 160px;
+  padding-bottom: 40px;
+}
+
+.tecnologia-informacao h2 {
+  padding-top: 20px;
+  padding-bottom: 32px;
+}
+
+.tecnologia-informacao p {
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+.link {
+  position: relative;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: var(--cor-p1);
+}
+
+.link:hover {
+  color: var(--cor-1);
+}
+
+.link:hover::after {
+  background-color: var(--cor-1);
+}
+
+.tecnologia-vantagens {
+  display: flex;
+  gap: 40px;
+  padding-top: 80px;
+}
+
+.tecnologia-vantagens-item {
+  padding-bottom: 80px;
+}
+
+.tecnologia-vantagens-item h3 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.eletrica::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../img/icones/eletrica.svg") no-repeat;
+}
+
+.rastreador::before {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url("../../img/icones/rastreador.svg") no-repeat;
+}
+
+.tecnologia-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+@media (max-width: 800px) {
+  .tecnologia {
+    grid-template-columns: 1fr;
+  }
+  .tecnologia-img img {
+    display: none;
+  }
+  .tecnologia-informacao {
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  .tecnologia-vantagens {
+    padding-top: 50px;
+  }
+  .tecnologia-bg {
+    box-shadow: none;
+  }
+  .tecnologia-vantagens-item {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tecnologia-vantagens {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .eletrica {
+    margin-top: 20px;
+  }
+}

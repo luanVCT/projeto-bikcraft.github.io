@@ -1,0 +1,112 @@
+#bicicletas-html .introducao-container {
+  background-color: black;
+}
+
+.bicicletas {
+  grid-template-columns: initial;
+  gap: 0px;
+}
+
+.bicicletas-container {
+  display: grid;
+  gap: 40px;
+}
+
+.bicicletas h1,
+.bicicletas span {
+  line-height: 1.125;
+}
+
+.bicicletas span {
+  margin-bottom: 8px;
+}
+
+.bicicleta-item-descricao {
+  font-weight: 400;
+}
+
+.bicicleta-item-vantagens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-weight: 500;
+  align-items: end;
+}
+
+.bicicleta-item-descricao {
+  max-width: 45ch;
+}
+
+.bicicleta-vantagem-conteudo {
+  display: flex;
+  gap: 10px;
+}
+
+.bicicleta-magic-bg {
+  background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 30%);
+}
+
+.bicicleta-item-img {
+  position: relative;
+}
+
+.bicicleta-item-img::before {
+  content: "R$ 2499";
+  display: block;
+  position: absolute;
+  color: var(--cor-0);
+  right: 0px;
+  top: 20px;
+  border-radius: 4px 0px 0px 4px;
+  padding: 8px 16px 8px 8px;
+  background-color: var(--cor-12);
+}
+
+.bicicleta-item-nimbus .bicicleta-item-img::before {
+  content: "R$ 4999";
+}
+
+.bicicleta-magic-bg .bicicleta-item-img::before {
+  content: "R$ 2499";
+}
+
+.bicicleta-item-nebula .bicicleta-item-img::before {
+  content: "R$ 3999";
+}
+
+@media (max-width: 800px) {
+  .bicicletas-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .bicicleta-item {
+    grid-template-columns: 1fr;
+    padding-right: 20px;
+    margin: initial;
+  }
+
+  .bicicleta-item-vantagens {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-weight: 500;
+  }
+
+  .bicicleta-item-vantagens .btn {
+    margin-top: 32px;
+  }
+
+  .bicicleta-item-img {
+    max-width: 380px;
+  }
+
+  .bicicleta-magic-bg {
+    background: var(--cor-12);
+  }
+  
+}
+
+@media (max-width: 400px) {
+  .bicicletas {
+    padding-right: 20px;
+  }
+}

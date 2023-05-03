@@ -1,0 +1,360 @@
+#orcamento-html .introducao-container {
+  background-color: black;
+}
+
+#orcamento-html {
+  background-color: #e5e5e5;
+}
+
+.orcamento-principal {
+  grid-template-columns: initial;
+  gap: 0px;
+}
+
+.orcamento-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 -600px #e5e5e5;
+}
+
+.orcamento {
+  grid-template-columns: 5fr 7fr;
+  gap: 0px;
+  margin-bottom: 120px;
+}
+
+.orcamento-escolha {
+  padding: 60px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: var(--cor-12);
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 1);
+  text-transform: inherit;
+}
+
+.orcamento-escolha h2,
+.orcamento-dados h2 {
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+  gap: 8px;
+}
+
+.orcamento-escolha h2::before,
+.orcamento-dados h2::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 8px;
+  background-color: var(--cor-p1);
+}
+
+.orcamento-escolha-opcoes {
+  margin-top: 20px;
+}
+
+.subtitulo-escolha-a-sua {
+  margin-bottom: 20px;
+}
+
+.orcamento-escolha-subtitulo-2 {
+  margin-top: 40px;
+}
+
+.h2-dados,
+.h2-entrega {
+  margin-bottom: 20px;
+}
+
+.orcamento-dados {
+  padding: 60px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 5px 5px 0px;
+  background-color: var(--cor-0);
+}
+
+.orcamento-dados-pessoais {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.orcamento-dados-pessoais input {
+  width: 100%;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.dados-cpf,
+.dados-email {
+  grid-column: 1/-1;
+}
+
+.dados-email {
+  margin-bottom: 60px;
+}
+
+.orcamento-dados .btn {
+  grid-column: 1/-1;
+  border: none;
+}
+
+.orcamento-entrega {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.orcamento-entrega input,
+.orcamento-entrega select {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.dados-estado select {
+  border: 1px solid var(--cor-4);
+}
+
+.orcamento-botao-solicitar {
+  margin-top: 40px;
+}
+
+.orcamento-escolha-opcoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.orcamento-escolha-opcoes > * {
+  grid-column: 1/-1;
+}
+
+.orcamento-escolha-opcoes > label {
+  grid-column: initial;
+  display: grid;
+  border-radius: 4px;
+  grid-template-columns: auto 1fr;
+  padding: 16px 32px;
+  gap: 8px;
+  background-color: var(--cor-10);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.orcamento-escolha-opcoes input:focus + label {
+  box-shadow: 0 0 0 2px var(--cor-p1);
+}
+
+.opcao-escolha-sua label, .opcao-escolha-plano label {
+  border: 1px solid var(--cor-12);
+}
+
+
+.opcao-escolha-plano input:focus + label, .opcao-escolha-sua input:focus + label {
+  box-shadow: 0 0 0 2px var(--cor-p1);
+  border: 1px solid var(--cor-11);
+}
+
+.opcao-escolha-sua,
+.opcao-escolha-plano {
+  display: none;
+}
+
+.orcamento-escolha-opcoes input {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+#opcao-bikcraft:checked + label {
+  background-color: var(--cor-0);
+  color: var(--cor-11);
+}
+
+#seguro:checked + label {
+  background-color: var(--cor-0);
+  color: var(--cor-11);
+}
+
+#seguro:checked ~ .opcao-escolha-plano {
+  display: block;
+}
+
+#opcao-bikcraft:checked ~ .opcao-escolha-sua {
+  display: block;
+}
+
+#seguro:checked ~ .opcao-escolha-sua {
+  display: none;
+}
+
+#opcao-bikcraft:checked ~ .opcao-escolha-plano {
+  display: none;
+}
+
+.produto-nimbus-info,
+.produto-magic-info,
+.produto-nebula-info {
+  display: none;
+}
+
+.opcao-escolha-sua label,
+.opcao-escolha-opcoes label,
+.opcao-escolha-plano label {
+  text-transform: capitalize;
+}
+
+.opcao-escolha-sua,
+.opcao-escolha-plano {
+  margin-top: 20px;
+}
+
+.opcao-escolha-plano h2 {
+  margin-bottom: 20px;
+}
+
+.opcao-escolha-sua label,
+.opcao-escolha-plano label {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  color: var(--cor-4);
+  padding: 16px 32px;
+  background-color: var(--cor-10);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.opcao-escolha-sua label span,
+.opcao-escolha-plano label span {
+  display: none;
+}
+
+.opcao-escolha-sua label::before,
+.opcao-escolha-plano label::before,
+.orcamento-escolha-opcoes > label::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--cor-10);
+  border: 1px solid var(--cor-6);
+}
+
+.opcao-escolha-sua label:hover,
+.opcao-escolha-plano label:hover,
+.orcamento-escolha-opcoes > label:hover {
+  background-color: var(--cor-9);
+}
+
+.opcao-escolha-sua input:checked + label,
+.opcao-escolha-plano input:checked + label {
+  background-color: var(--cor-0);
+  color: var(--cor-11);
+}
+
+.opcao-escolha-sua input:checked + label::before,
+.opcao-escolha-plano input:checked + label::before,
+.orcamento-escolha-opcoes > input:checked + label::before {
+  border-color: var(--cor-7);
+  box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+
+.opcao-escolha-sua input:checked + label span,
+.opcao-escolha-plano input:checked + label span {
+  display: inline-block;
+}
+
+.produto-nimbus-info-lista {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cor-0);
+  padding: 16px 32px;
+  border-radius: 4px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.produto-nimbus-info-lista-descricao {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.produto-nimbus-info-lista-descricao:last-child {
+  margin-bottom: 0px;
+}
+
+#nimbus-opcao:checked + label + .produto-nimbus-info {
+  display: block;
+}
+
+#magic-opcao:checked + label + .produto-magic-info {
+  display: block;
+}
+
+#nebula-opcao:checked + label + .produto-nebula-info {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .orcamento-bg {
+    background-color: var(--cor-11);
+    box-shadow: inset 0 -400px #e5e5e5;
+  }
+
+  .orcamento {
+    grid-template-columns: 1fr;
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dados-nome,
+  .dados-sobrenome,
+  .dados-cep,
+  .dados-cpf,
+  .dados-logradouro,
+  .dados-bairro,
+  .dados-numero-casa,
+  .dados-cidade {
+    grid-column: 1/-1;
+  }
+  .orcamento-dados {
+    padding: 30px;
+  }
+
+  .orcamento-escolha {
+    padding: 30px;
+  }
+
+  .orcamento-escolha-opcoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: start;
+  }
+
+  .produto-nimbus-info-lista {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--cor-0);
+    padding: 16px 32px;
+    gap: 16px;
+    border-radius: 4px;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 300px) {
+  .orcamento-dados {
+    padding: 20px;
+  }
+
+  .opcao-escolha-sua label{
+    justify-self: start;
+  }
+}

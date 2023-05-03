@@ -1,0 +1,152 @@
+.introducao-bg {
+  box-shadow: inset 0 -120px #ffffff;
+}
+
+.header-home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.introducao-container img {
+  border-radius: 4px;
+}
+
+.nav-lista {
+  display: flex;
+  margin-top: 5px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.nav-lista li a {
+  color: #ffffff;
+  line-height: 1.5;
+  padding: 5px 0px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-lista li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 2px;
+  margin-top: 3px;
+  background: #ffffff;
+}
+
+.nav-lista li a:hover::after {
+  width: 100%;
+  transition: 0.5s;
+}
+
+.nav-lista li a.ativo::after {
+  width: 100%;
+}
+
+.main-introducao {
+  padding: 0px 20px;
+}
+
+.introducao-descricao {
+  align-self: center;
+}
+
+.introducao-descricao h1 {
+  max-width: 15ch;
+  margin-bottom: 30px;
+}
+
+.introducao-descricao p {
+  max-width: 40ch;
+  margin-bottom: 18px;
+}
+
+.introducao-descricao a:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.introducao-img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  object-position: left;
+}
+
+#nimbus-pequena {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .introducao-descricao {
+    padding-bottom: 160px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-lista li a::after {
+    display: none;
+  }
+
+  .nav-lista li {
+    background-color: #111111;
+    padding: 8px 14px;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .main-introducao {
+    background-color: #111111;
+    grid-template-columns: 1fr;
+  }
+
+  .introducao-descricao {
+    padding-top: 12px;
+    align-self: center;
+    padding-bottom: 0px;
+  }
+
+  .introducao-descricao h1 {
+    max-width: initial;
+    margin-bottom: 6px;
+    padding-top: 32px;
+  }
+
+  #nimbus-grande {
+    display: none;
+  }
+
+  #nimbus-pequena {
+    display: block;
+  }
+
+  .main-introducao {
+    box-shadow: inset 0 -40px #ffffff;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-home {
+    gap: 18px;
+  }
+  .nav-lista {
+    gap: 15px;
+  }
+
+  .nav-lista li {
+    padding: 4px 8px;
+  }
+
+  .introducao-descricao p {
+    font-size: 1.1rem;
+  }
+}

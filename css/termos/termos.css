@@ -1,0 +1,44 @@
+#termos-html .introducao-container {
+  background-color: black;
+}
+
+.termos {
+  grid-template-columns: initial;
+  gap: 0px;
+}
+
+.termos-conteudo {
+  grid-template-columns: initial;
+  gap: 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.termos-descricao {
+  display: grid;
+  gap: 10px;
+  padding-top: 20px;
+  max-width: 71ch;
+}
+
+.contausuario-subtitulo h2, .segurobikcraft-subtitulo h2 {
+  padding-top: 48px;
+}
+
+@media (max-width:800px) {
+  .termos-bg {
+    background-color: var(--cor-11);
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+
+  .termos span {
+    font-size: 1rem;
+  }
+
+  .termos-conteudo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+

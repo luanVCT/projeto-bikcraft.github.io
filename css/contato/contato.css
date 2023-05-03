@@ -1,0 +1,267 @@
+.contato-dados-bg {
+  background-color: var(--cor-11);
+  background-image: linear-gradient(to bottom, var(--cor-11) 60%, #e5e5e5 60%);
+}
+
+.contato-container {
+  grid-template-columns: 5fr 7fr;
+  gap: 0px;
+}
+
+.contato-meios {
+  background-color: var(--cor-12);
+  padding: 60px;
+  border-radius: 4px 0px 0px 4px;
+}
+
+.contato-meios {
+  display: inline-block;
+}
+
+.contato-meios-endereco {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 32px;
+  margin-top: 60px;
+  gap: 10px;
+  align-items: start;
+}
+
+.contato-meios-email {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 32px;
+  gap: 10px;
+  align-items: start;
+}
+
+.contato-meios-email a:hover,
+.contato-meios-fone a:hover {
+  color: var(--cor-2);
+}
+
+.contato-meios-fone {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 60px;
+  gap: 10px;
+  align-items: start;
+}
+
+.contato-meios-redes {
+  display: flex;
+  gap: 32px;
+  margin-left: 30px;
+}
+
+.contato-formulario {
+  padding: 60px;
+  background-color: var(--cor-0);
+}
+
+.contato-formulario form input {
+  margin-bottom: 32px;
+}
+
+.contato-formulario input {
+  margin-top: 5px;
+  padding: 12px;
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+}
+
+.formulario-mensagem textarea:focus,
+.formulario-email input:focus,
+.formulario-nome-fone input:focus {
+  outline: none;
+  border: 1px solid var(--cor-p1);
+  background-color: var(--cor-0);
+  box-shadow: 0 0 0 3px #fea;
+}
+
+.formulario-nome-fone {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formulario-nome-fone input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario-email input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formulario-mensagem textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  padding: 12px;
+  background-color: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.formulario-botao button {
+  border: none;
+}
+
+.lojas-locais-bg {
+  background-color: #e5e5e5;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.lojas-locais h2 {
+  padding-bottom: 100px;
+}
+
+.loja-item {
+  display: inline-block;
+  background-color: var(--cor-0);
+  border-radius: 4px;
+}
+
+.loja-informacao {
+  padding: 32px 60px;
+}
+
+.loja-endereco-contato {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.loja-endereco-contato li {
+  padding-left: 12px;
+}
+
+.loja-endereco-contato li:nth-child(odd) {
+  border-left: 2px solid var(--cor-2);
+}
+
+.loja-endereco-contato li:first-child {
+  padding-bottom: 12px;
+}
+
+.loja-horario {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+}
+
+.loja-informacao h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.loja-informacao h3::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--cor-p1);
+}
+
+.loja-item-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .lojas-locais-bg {
+    background-color: #e5e5e5;
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .lojas-locais h2 {
+    padding-bottom: 30px;
+  }
+
+  .lojas-estados {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contato-dados-bg {
+    background-color: var(--cor-11);
+    background-image: none;
+    padding-bottom: 60px;
+  }
+
+  .contato-meios {
+    background-color: var(--cor-12);
+    padding: 30px 60px 60px 60px;
+  }
+
+  .contato-meios-endereco {
+    margin-top: 30px;
+    margin-bottom: 16px;
+  }
+
+  .contato-meios-email {
+    margin-bottom: 16px;
+  }
+
+  .contato-meios-fone {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .formulario-nome-fone {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .formulario-nome-fone input {
+    width: auto;
+  }
+
+  .formulario-email input {
+    width: auto;
+  }
+
+  .loja-endereco-contato {
+    grid-template-columns: 1fr;
+  }
+
+  .loja-endereco-contato li:nth-child(odd) {
+    border-left: 2px solid var(--cor-2);
+  }
+
+  .loja-endereco-contato li:first-child {
+    padding-bottom: 0px;
+  }
+
+  .contato-meios,
+  .contato-formulario {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .loja-informacao {
+    padding: 20px 30px;
+  }
+
+  .contato-meios-email,
+  .contato-meios-endereco,
+  .contato-meios-fone {
+    grid-template-columns: 1fr;
+  }
+}
